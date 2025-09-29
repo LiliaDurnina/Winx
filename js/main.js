@@ -25,7 +25,7 @@ button.addEventListener('click', () => {
     }
 });
 
-document.querySelector('.burger').addEventListener('click', function(e){
+document.getElementsByClassName('burger')[0].addEventListener('click', function(e) {
     e.preventDefault();
-    $('.header__top').toggleClass('header__top--burger-open');
+    document.getElementsByClassName('header__top')[0].classList.toggle('header__top--burger-open');
 });
