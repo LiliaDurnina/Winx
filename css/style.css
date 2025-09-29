@@ -1,0 +1,410 @@
+html, body {
+    font-size: 16px;
+    font-family: Playpen Sans, sans-serif;
+    color: #424551;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    /*равен высоте боди, или контенту, 
+    в котором он находится*/
+    overflow: hidden;
+    /*если ширина провышает ширины viewport 
+    контент обрезаетсяс*/
+
+}
+
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+    /*паддинг входит в ширину*/
+    margin: 0 auto;
+    /* с боков автомат*/
+}
+
+.button {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 600;
+    line-height: 325%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0 40px;
+    color: #ffffffff;
+    border-radius: 4px;
+    transition: all .3s;
+    background: linear-gradient(45deg, #ad0659 0%, #f7059a 100%);
+    ;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    /*плавное увеличение*/
+
+}
+
+.button-empty {
+    background-image: none;
+    border: .5px solid #9F0631;
+    color: #9F0631;
+
+
+}
+
+.logo {}
+
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+
+.burger {
+    display: none;
+    z-index: 100;
+    /*В обычной ситуации его нет*/
+
+}
+
+.header {
+    font-weight: 700;
+    background: linear-gradient(45deg, #f3f3f3 0%, rgba(231, 100, 137, 0.3) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/**************************************************/
+
+.header__body {
+    flex: 1 1 auto;
+
+
+}
+
+.header-body-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+
+}
+
+.header__logo {
+    margin-right: 60px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__nav {
+    margin-right: auto;
+    /*сколько места есть она возьмёт*/
+
+}
+
+.header__nav-list {
+    display: flex;
+
+}
+
+.header__nav-item {
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.header__nav-item:last-child {
+    margin-right: 0;
+}
+
+.header__nav-link {
+    line-height: 160%;
+    white-space: nowrap;
+    transition: all .3s;
+
+}
+
+/*Важно поставить визитид раньше, чтобы наведение срабатывало*/
+
+.header__nav-link:visited {
+    color: #495286;
+}
+
+.header__nav-link:hover {
+    color: #9F0631;
+}
+
+
+
+.header__btn-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__user-btn {
+    white-space: nowrap;
+    line-height: 160%;
+    transition: all .3s;
+    /*запрещаем тексту переноситься*/
+}
+
+.header__user-btn:hover {
+    color: #FF3F3A
+}
+
+
+.header__user-nav {
+    position: relative;
+    padding-left: 28px;
+}
+
+.header__user-nav::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    content: "";
+    background: url("../img/icons/Profile.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.header__top-button {
+    margin-right: 36px;
+
+}
+
+.stars_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 1;
+    animation: fall 1s linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(600px) scale(0.5);
+        opacity: 0;
+    }
+
+    /*scale - масштабирование*/
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1E212C;
+    margin: auto;
+}
+
+.header__content {
+    margin-right: 30px;
+}
+
+.header__title {
+    font-family: Shantell Sans;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    max-width: 450px;
+    margin-bottom: 32px;
+    color: #9f0631;
+}
+
+.header__content-buttons {
+    display: flex;
+
+    align-items: center;
+}
+
+.header__content-btn:first-child {
+    margin-right: 24px;
+}
+
+/*
+.header__content-btn:last-child {
+    margin-right: 0px;
+}*/
+
+.header__play {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+
+.header__play img {
+    margin-right: 16px;
+    border-radius: 50%;
+    transition: 0.3s
+}
+
+.header__play:hover img {
+
+    box-shadow: 0px 0px 0px 16px rgba(191, 74, 154, 0.12);
+
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1E212C;
+    margin-bottom: 80px;
+}
+
+.header__row>span {
+    background-color: #9A034E;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 15px;
+
+}
+
+.header__row-item {
+    display: flex;
+    align-items: center;
+}
+
+.header__row-item span {
+    font-family: Shantell Sans;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 160%;
+    margin-right: 12px;
+    color: #9A034E;
+}
+
+
+
+
+
+/*Медиа запросы*/
+@media (max-width: 1024px) {
+    .burger {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 15px;
+
+
+
+    }
+
+
+
+    .burger span {
+        display: block;
+        height: 4px;
+        width: 30px;
+        background: linear-gradient(45deg, #ad0659 0%, #f7059a 100%);
+        border-radius: 3px;
+        margin: 4px 0;
+    }
+
+    /*спан между оказывается*/
+
+    .burger::before, .burger::after {
+        content: "";
+        display: block;
+        height: 4px;
+        width: 30px;
+        background: linear-gradient(45deg, #ad0659 0%, #f7059a 100%);
+        border-radius: 3px;
+
+    }
+
+    .header {
+        padding-right: 92px;
+    }
+
+    .header__top {
+        position: fixed;
+        z-index: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #ffffffff;
+        min-width: 120px;
+        transform: translateX(100%);
+        /*пока его не вызвали, он скрыт
+        от посторонних глаз*/
+
+    }
+
+    .header__top--burger-open {
+        transform: translateX(0%);
+
+    }
+
+    .header__top-inner {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+    }
+
+    .header__logo {
+        margin: 0 auto;
+    }
+
+
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav-item {
+        margin: 30px 0;
+
+    }
+
+    .header__nav-link {
+        padding: 30px;
+    }
+
+    .header__top-button {
+        justify-content: center;
+        margin: 0;
+        margin: 0 auto 100px;
+
+    }
+
+
+
+
+}
