@@ -29,3 +29,18 @@ document.getElementsByClassName('burger')[0].addEventListener('click', function(
     e.preventDefault();
     document.getElementsByClassName('header__top')[0].classList.toggle('header__top--burger-open');
 });
+
+
+const accordLinks = document.getElementsByClassName('section2__accor-link');
+
+for (let i = 0; i < accordLinks.length; i++) {
+    accordLinks[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('section2__accor-link-active');
+        
+        const textElement = this.querySelector('.section2_accord-text');
+        if (textElement) {
+            textElement.classList.toggle('show');
+        }
+    });
+}
