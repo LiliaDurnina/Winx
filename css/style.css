@@ -73,13 +73,17 @@ html, body {
 
 .header {
     font-weight: 700;
-    background: linear-gradient(45deg, #f3f3f3 0%, rgba(231, 100, 137, 0.3) 100%);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+
 
 }
 
+
+.header--main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #f3f3f3 0%, rgba(231, 100, 137, 0.3) 100%);
+}
 
 /**************************************************/
 
@@ -309,8 +313,146 @@ html, body {
 }
 
 
+/**************************/
+.section1 {
+    margin-top: 83px;
+
+}
+
+.section1__main {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-end;
+    margin: auto;
+
+}
 
 
+.section1__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    max-width: 622px;
+
+}
+
+
+
+.section1__content-subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.06em;
+    margin-bottom: 12px;
+
+}
+
+.section1__content-title {
+    font-family: Shantell Sans;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 130%;
+    color: #495286;
+    margin-bottom: 32px;
+}
+
+.section1__content-curtext {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.section1__content-subtext {
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: -0.06em;
+    margin-bottom: 42px;
+}
+
+.section1__content-btn {
+    display: inline-block;
+
+    background: linear-gradient(45deg, #495588 0%, #7d76ff 100%);
+}
+
+.section1__content-btn:first-child {
+    margin-right: 24px;
+}
+
+
+.button-empty {
+    background: none;
+    color: #515A9A;
+
+    border-color: #4F5995;
+}
+
+.section1__main img {
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 34px;
+}
+
+.section1__numbers-content {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section1_numbers-img {
+    margin-right: 30px;
+
+}
+
+.section1_img {
+    border-radius: 34px;
+}
+
+.section1__rows {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section1__rows-item {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 20px;
+}
+
+.section1__rows-item:last-child {
+
+    margin-bottom: 0px;
+}
+
+.section1__rows-item span {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #495286;
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+/***********************************************/
 
 /*Медиа запросы*/
 @media (max-width: 1024px) {
