@@ -562,9 +562,99 @@ html, body {
 
 
 
+/******************КОНТАКТЫ*********/
+
+.footer {
+    background-color: #1E212C;
+    color: #FFFFFF;
+}
+
+.footer__main {
+    padding: 50px 0;
+}
+
+.footer__columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 0px;
+    padding: 0 0px;
+}
 
 
+.footer__column:first-child {
+    flex-basis: 30%; 
+}
+.footer__column:nth-child(2) {
+    flex-basis: 1%; 
+}
+.footer__column:nth-child(3) {
+    flex-basis: 20%; 
+}
 
+.footer__column:last-child {
+    flex-basis: 20%; 
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    max-width: 150px;
+}
+
+.footer__title {
+    font-family: Shantell Sans;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.footer__text {
+    
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 165%;
+    color: #9ca3af;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__list-item {
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #9ca3af;
+}
+
+.footer__bottom {
+    background-color: #12141d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__top-button {
+    background: linear-gradient(45deg, #ad0659 0%, #f7059a 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footer__top-button:hover {
+    transform: scale(1.05);
+}
 
 /***********************************************/
 
@@ -659,6 +749,7 @@ html, body {
         margin: 0 auto 100px;
 
     }
+
 
 
 
