@@ -1,0 +1,8 @@
+
+<a href="fairy.html?fairy=bloom">Блум</a>
+<a href="fairy.html?fairy=stella">Стелла</a>
+<a href="fairy.html?fairy=flora">Флора</a>
+<a href="fairy.html?fairy=musa">Муза</a>
+<a href="fairy.html?fairy=layla">Лейла</a>
+<a href="fairy.html?fairy=roxy">Рокси</a>
+<a href="fairy.html?fairy=tecna">Текна</a>
