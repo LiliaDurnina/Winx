@@ -127,11 +127,12 @@ const FAIRIES_DATA = {
         cardColor: "rgba(90, 12, 46, 0.31)",      
         accentColor: "rgb(90, 12, 46)",          
         powers: [
-            { image: "../img/5/Roxy1.svg", title: "Общение с животными" },
+            { image: "img/5/Roxy1.svg", title: "Общение с животными" },
             { image: "img/5/Roxy2.svg", title: "Земная магия" },
             { image: "img/5/Roxy3.svg", title: "Фея-хранительница" }
         ]
     }
 
 };
+
 
