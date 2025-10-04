@@ -1354,10 +1354,6 @@ html, body {
     }
 }
 
-<<<<<<< HEAD
-
-}
-=======
 /* Сетка специалистов */
 .specialists__grid {
     display: grid;
@@ -1427,13 +1423,3 @@ html, body {
         left: 125%;
     }
 }
-
-@keyframes shine {
-    0% {
-        left: -75%;
-    }
-    100% {
-        left: 125%;
-    }
-}
->>>>>>> d3e3c8f (trix and specialists page)
