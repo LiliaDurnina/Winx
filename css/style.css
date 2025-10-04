@@ -393,7 +393,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     color: #1E212C;
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 }
 
 .header__row>span {
@@ -2044,6 +2044,7 @@ html, body {
         height: 20px;
     }
 }
+
 
 
 
