@@ -9,8 +9,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Технологий / Техномагия",
         image: "img/5/Tecna.svg",
         theme: "fairy-tecna",
-        cardColor: "rgba(72, 71, 101, 0.31)",     // Цвет карточек
-        accentColor: "#484765",                    // Цвет текста и кнопки
+        cardColor: "rgba(72, 71, 101, 0.31)",     
+        accentColor: "#484765",                  
         powers: [
             { image: "img/5/Tecna1.svg", title: "Цифровые щиты" },
             { image: "img/5/Tecna2.svg", title: "Техно-болты" },
@@ -29,8 +29,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Огня / Драконье Пламя",
         image: "img/5/Bloom.svg",
         theme: "fairy-bloom",
-        cardColor: "rgba(174, 61, 27, 0.31)",     // Цвет карточек
-        accentColor: "rgb(174, 61, 27)",          // Цвет текста и кнопки
+        cardColor: "rgba(174, 61, 27, 0.31)",     
+        accentColor: "rgb(174, 61, 27)",          
         powers: [
             { image: "img/5/Bloom1.svg", title: "Огонь Дракона" },
             { image: "img/5/Bloom2.svg", title: "Лидерство" },
@@ -48,8 +48,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Солнца / Солнечная магия",
         image: "img/5/Stella.svg",
         theme: "fairy-stella",
-        cardColor: "rgba(253, 153, 59, 0.31)",    // Цвет карточек
-        accentColor: "rgb(253, 153, 59)",         // Цвет текста и кнопки
+        cardColor: "rgba(253, 153, 59, 0.31)",    
+        accentColor: "rgb(253, 153, 59)",         
         powers: [
             { image: "img/5/Stela1.svg", title: "Солярная вспышка" },
             { image: "img/5/Stela2.svg", title: "Отражение" },
@@ -67,8 +67,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Природы / Магия растений",
         image: "img/5/Flora.svg",
         theme: "fairy-flora",
-        cardColor: "rgba(153, 182, 141, 0.31)",   // Цвет карточек
-        accentColor: "rgb(153, 182, 141)",        // Цвет текста и кнопки
+        cardColor: "rgba(153, 182, 141, 0.31)",   
+        accentColor: "rgb(153, 182, 141)",       
         powers: [
             { image: "img/5/Flora1.svg", title: "Контроль растений" },
             { image: "img/5/Flora2.svg", title: "Исцеление" },
@@ -86,8 +86,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Музыки / Магия звука",
         image: "img/5/Musa.svg",
         theme: "fairy-musa",
-        cardColor: "rgba(154, 112, 162, 0.31)",   // Цвет карточек
-        accentColor: "rgb(154, 112, 162)",        // Цвет текста и кнопки
+        cardColor: "rgba(154, 112, 162, 0.31)",   
+        accentColor: "rgb(154, 112, 162)",        
         powers: [
             { image: "img/5/Musa1.svg", title: "Sonic-атака" },
             { image: "img/5/Musa3.svg", title: "Вибрационный барьер" },
@@ -105,8 +105,8 @@ const FAIRIES_DATA = {
         subtitle: "Фея Волн / Магия воды",
         image: "img/5/Layla.svg",
         theme: "fairy-layla",
-        cardColor: "rgba(10, 73, 86, 0.31)",      // Цвет карточек
-        accentColor: "rgb(10, 73, 86)",           // Цвет текста и кнопки
+        cardColor: "rgba(10, 73, 86, 0.31)",      
+        accentColor: "rgb(10, 73, 86)",          
         powers: [
             { image: "img/5/Layla1.svg", title: "Контроль стихии" },
             { image: "img/5/Layla2.svg", title: "Сверхловкость" },
@@ -124,13 +124,14 @@ const FAIRIES_DATA = {
         subtitle: "Фея Животных",
         image: "img/5/Roxy.svg",
         theme: "fairy-roxy",
-        cardColor: "rgba(90, 12, 46, 0.31)",      // Цвет карточек
-        accentColor: "rgb(90, 12, 46)",           // Цвет текста и кнопки
+        cardColor: "rgba(90, 12, 46, 0.31)",      
+        accentColor: "rgb(90, 12, 46)",          
         powers: [
-            { image: "img/5/Roxy1.svg", title: "Общение с животными" },
+            { image: "../img/5/Roxy1.svg", title: "Общение с животными" },
             { image: "img/5/Roxy2.svg", title: "Земная магия" },
             { image: "img/5/Roxy3.svg", title: "Фея-хранительница" }
         ]
     }
 
 };
+
