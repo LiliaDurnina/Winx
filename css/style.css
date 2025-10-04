@@ -1448,13 +1448,13 @@ html, body {
 }
 
 .header__content {
-    padding: 60px 0;
+    padding: 60px 0 0;
     text-align: center;
 }
 
 .characters-section,
 .characters-description {
-    padding: 80px 0 15px;
+    padding: 25px 0 15px;
     background: white;
 }
 
@@ -1962,4 +1962,5 @@ html, body {
         height: 20px;
     }
 }
+
 
