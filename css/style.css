@@ -5,16 +5,7 @@ html, body {
 
 }
 
-.wrapper {
-    
-   
-    /*background: linear-gradient(45deg, #f3f3f3 0%, rgba(231, 100, 137, 0.3) 100%);*/
-    /*равен высоте боди, или контенту, 
-    в котором он находится*/
 
-
-
-}
 
 .container {
     max-width: 1260px;
@@ -102,7 +93,7 @@ html, body {
 
 
 .header-main {
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     background: linear-gradient(45deg, #f3f3f3 0%, rgba(231, 100, 137, 0.3) 100%);
@@ -1971,3 +1962,4 @@ html, body {
         height: 20px;
     }
 }
+
