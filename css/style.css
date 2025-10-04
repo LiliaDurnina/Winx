@@ -765,7 +765,8 @@ html, body {
 
 .article__kard-img {
     position: absolute;
-    top: -193px;
+    bottom: 156px;
+    
     left: 50%;
     transform: translateX(-50%);
 
@@ -1095,10 +1096,10 @@ html, body {
         max-width: 100%;
     }
 
-    /* Хедер */
+    
     .header {
         padding-right: 0;
-        /* убрали лишний отступ */
+       
     }
 
     .header__main {
@@ -1156,7 +1157,7 @@ html, body {
         margin: 0 0 8px;
     }
 
-    /* Навигация */
+   
     .header__nav-list {
         flex-direction: column;
         align-items: center;
@@ -1171,7 +1172,7 @@ html, body {
         padding: 15px;
     }
 
-    /* Кнопки */
+    
     .button {
         padding: 10px 20px;
         font-size: 14px;
@@ -1183,7 +1184,7 @@ html, body {
         margin-right: 0;
     }
 
-    /* Изображения */
+    
     .header__main img {
         max-width: 100%;
         height: auto;
@@ -1236,7 +1237,7 @@ html, body {
         margin: 0 auto;
     }
 
-    /* Секция с числами */
+    
     .section1__numbers-content {
         flex-direction: column;
         gap: 30px;
@@ -1269,7 +1270,7 @@ html, body {
         margin-right: 0;
     }
 
-    /* Аккордеон */
+    
     .section2_que {
         padding: 60px 0;
     }
@@ -1328,7 +1329,7 @@ html, body {
         margin-bottom: 15px;
     }
 
-    /* Карточки сил */
+    
     .section2__power-kard {
         flex-direction: column;
         align-items: center;
@@ -1349,7 +1350,7 @@ html, body {
         height: 125px;
     }
 
-    /* Большая карточка феи */
+   
     .article__kard {
         padding-right: 0;
     }
@@ -1361,7 +1362,7 @@ html, body {
     }
 
     .article__kard-img {
-        top: -150px;
+       
         max-width: 250px;
         height: auto;
     }
@@ -1376,7 +1377,7 @@ html, body {
         top: 230px;
     }
 
-    /* Кнопки навигации */
+    
     .article__main-fairy-btn {
         margin-top: 30px;
     }
@@ -1388,13 +1389,13 @@ html, body {
 
 
     .section1__content-btn:first-child {
-        margin-right: 0 !important;
-        margin-bottom: 20px !important;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .header__content-btn:first-child {
-        margin-right: 0 !important;
-        margin-bottom: 15px !important;
+        margin-right: 0 ;
+        margin-bottom: 15px;
     }
 
     .specialists__grid {
@@ -1948,5 +1949,6 @@ html, body {
         height: 20px;
     }
 }
+
 
 
