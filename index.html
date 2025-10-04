@@ -159,69 +159,9 @@
 
 <script src="js/main.js"></script>
 
-<script>
-    
-    function scrollToElement(elementId) {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    }
-    
-   
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-    
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        
-        const contactButton = document.querySelector('.header__content-buttons .button-empty');
-        if (contactButton) {
-            contactButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                scrollToElement('contacts');
-            });
-        }
-        
-       
-        const aboutLinks = document.querySelectorAll('.header__nav-link[href="#contacts"]');
-        aboutLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                scrollToElement('contacts');
-                
-               
-                const burgerMenu = document.querySelector('.header__top');
-                if (burgerMenu && burgerMenu.classList.contains('header__top--burger-open')) {
-                    burgerMenu.classList.remove('header__top--burger-open');
-                }
-            });
-        });
-        
-      
-        const headerContactButton = document.querySelector('.header__top-button');
-        if (headerContactButton) {
-            headerContactButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                scrollToElement('contacts');
-                
-            
-                const burgerMenu = document.querySelector('.header__top');
-                if (burgerMenu && burgerMenu.classList.contains('header__top--burger-open')) {
-                    burgerMenu.classList.remove('header__top--burger-open');
-                }
-            });
-        }
-    });
-</script>
+<script src="js/navigation.js"></script>
 
 </html>
+
 
 
