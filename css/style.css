@@ -2,7 +2,6 @@ html, body {
     font-size: 16px;
     font-family: Playpen Sans, sans-serif;
     color: #424551;
-    overflow-x: hidden;
 }
 
 
@@ -341,6 +340,7 @@ html, body {
 
     align-items: flex-end;
     margin: auto;
+    margin-bottom: 60px;
 
 }
 
@@ -922,18 +922,12 @@ html, body {
 .specialist__card-container {
     text-align: center;
     padding: 20px;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .specialist__img-container {
     background-color: #D5DEEA;
     border-radius: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .character-card img {
@@ -1404,6 +1398,11 @@ html, body {
 
     .specialists__grid {
         grid-template-columns: 1fr;
+    }
+
+    .specialist__card-container {
+        text-align: center;
+        padding: 20px, 0;
     }
 }
 
