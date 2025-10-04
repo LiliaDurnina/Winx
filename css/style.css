@@ -916,20 +916,24 @@ html, body {
 .specialists__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px 20px;
 }
 
 /* Карточка специалиста */
 .specialist__card-container {
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .specialist__img-container {
     background-color: #D5DEEA;
     border-radius: 10px;
     padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .character-card img {
