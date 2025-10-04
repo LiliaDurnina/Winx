@@ -39,7 +39,7 @@
                                     <a class=header__nav-link href="minor_characters.html">Второстепенные персонажи</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class=header__nav-link href="#">О нас</a>
+                                    <a class="header__nav-link" href="#contacts">О нас</a>
                                 </li>
                             </ul>
 
@@ -82,7 +82,44 @@
             </div>
 
         </article>
-
+        <footer class="footer" id="contacts">
+            <div class="footer__main">
+                <div class="container">
+                    <div class="footer__columns">
+                        <div class="footer__column">
+                            <img src="img/1/logo.svg" alt="logo" class="footer__logo">
+                            <p class="footer__text">Сайт выполнен студентками образовательных групп 23КНТ-4 и 23КНТ-6. Мы вложили сюда всю душу и даже пару слёз, работая с любимыми персонажами детства.</p>
+                        </div>
+                        <div class="footer__column">
+                           
+                        </div>
+                        <div class="footer__column">
+                            <h3 class="footer__title">DEVELOPERS</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">Дурнина Лилия</li>
+                                <li class="footer__list-item">Громова Дарья</li>
+                                <li class="footer__list-item">Чупрова Наталья</li>
+                                <li class="footer__list-item">Майорова Мария</li>
+                            </ul>
+                        </div>
+                        <div class="footer__column">
+                            <h3 class="footer__title">CONTACT US</h3>
+                            <ul class="footer__list">
+                                <li class="footer__list-item">lsdurnina@edu.hse.ru</li>
+                                <li class="footer__list-item">dsgromova@edu.hse.ru </li>
+                                <li class="footer__list-item">npchuprova@edu.hse.ru</li>
+                                <li class="footer__list-item">mvmaiorova@edu.hse.ru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <button class="footer__top-button" onclick="scrollToTop()">Go to top</button>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
@@ -93,8 +130,70 @@
 <script src="js/fairy-loader.js"></script>
 
 
-
+<script>
+    
+    function scrollToElement(elementId) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+    
+   
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        const contactButton = document.querySelector('.header__content-buttons .button-empty');
+        if (contactButton) {
+            contactButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollToElement('contacts');
+            });
+        }
+        
+       
+        const aboutLinks = document.querySelectorAll('.header__nav-link[href="#contacts"]');
+        aboutLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollToElement('contacts');
+                
+               
+                const burgerMenu = document.querySelector('.header__top');
+                if (burgerMenu && burgerMenu.classList.contains('header__top--burger-open')) {
+                    burgerMenu.classList.remove('header__top--burger-open');
+                }
+            });
+        });
+        
+      
+        const headerContactButton = document.querySelector('.header__top-button');
+        if (headerContactButton) {
+            headerContactButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                scrollToElement('contacts');
+                
+            
+                const burgerMenu = document.querySelector('.header__top');
+                if (burgerMenu && burgerMenu.classList.contains('header__top--burger-open')) {
+                    burgerMenu.classList.remove('header__top--burger-open');
+                }
+            });
+        }
+    });
+</script>
 
 </html>
+
 
 
